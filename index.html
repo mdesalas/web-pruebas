@@ -99,35 +99,6 @@ button:hover {
   border-radius: 4px;
 }
 
-/* Submenú: oculto por defecto */
-.submenu {
-  display: none;
-  position: absolute;
-  bottom: 100%; /* Se coloca justo encima del menú */
-  left: 0;
-  background-color: #444;
-  min-width: 160px;
-  padding: 10px 0;
-  border-radius: 4px;
-}
-
-/* Mostrar submenú al pasar el ratón sobre el elemento */
-.menu-flotante li:hover .submenu {
-  display: block;
-}
-
-.submenu li {
-  padding: 8px 12px;
-}
-
-/* Estilo de los enlaces del submenú */
-.submenu a {
-  color: white;
-}
-
-.submenu a:hover {
-  background-color: #666;
-}
 
 /* Estilo para el contenido principal */
 .contenido {
@@ -151,22 +122,10 @@ h1 {
   <div class="menu-flotante">
     <ul>
       <li><a href="#">Creator</a>
-        <ul class="submenu">
-          <li><a href="#">Option 1</a></li>
-          <li><a href="#">Option 2</a></li>
-        </ul>
       </li>
       <li><a href="#">Font</a>
-        <ul class="submenu">
-          <li><a href="#">Option A</a></li>
-          <li><a href="#">Option B</a></li>
-        </ul>
       </li>
       <li><a href="#">Color</a>
-        <ul class="submenu">
-          <li><a href="#">Red</a></li>
-          <li><a href="#">Blue</a></li>
-        </ul>
       </li>
       <li><a href="#">Other</a></li>
     </ul>
