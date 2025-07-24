@@ -105,6 +105,41 @@ button {
 
     <button type="submit" id="btn-enviar">Enviar</button>
   </form>
+  
+  <!-- Aquí va el JavaScript para la validación y el envío del evento a GTM/GA4 -->
+  <script>
+    // Seleccionamos el formulario
+    const formulario = document.getElementById('formulario-contacto');
+    
+    // Cuando el formulario se envíe
+    formulario.addEventListener('submit', function(event) {
+      // Evitar que el formulario se envíe por defecto (solo para pruebas, en producción eliminar)
+      event.preventDefault(); 
 
+      // Aquí va la lógica para enviar el formulario al servidor (esto depende de tu backend, por ejemplo, un AJAX call)
+
+      // Solo si la validación es exitosa, se dispara el evento
+      if (formulario.checkValidity()) {
+        // Si es válido, enviamos el evento a GTM para que se registre en GA4
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          'event': 'form_submit',
+          'form_name': 'Formulario de contacto', // Puede ser el nombre del formulario
+          'form_status': 'success'
+        });
+
+        // Aquí deberías proceder con el envío del formulario
+        formulario.submit(); // Este es el verdadero envío si lo estás haciendo mediante formulario tradicional
+      } else {
+        // Si no es válido, también podemos enviar un evento para los casos de error
+        window.dataLayer.push({
+          'event': 'form_submit',
+          'form_name': 'Formulario de contacto',
+          'form_status': 'error'
+        });
+      }
+    });
+  </script>
+  
 </body>
 </html>
