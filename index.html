@@ -70,7 +70,8 @@ button:hover {
   padding: 10px 0;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra hacia arriba para efecto */
   border-radius: 10px; /* Redondea los bordes */
-}
+} 
+  
 
 /* Estilo de la lista principal */
 .menu-flotante ul {
@@ -101,6 +102,10 @@ button:hover {
   border-radius: 4px;
 }
 
+/* Desplazamiento suave */
+    html {
+      scroll-behavior: smooth;
+    }
 
 /* Estilo para el contenido principal */
 .contenido {
@@ -114,6 +119,7 @@ h1 {
     
   </style>
 </head>
+  
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ83HFK7"
@@ -123,13 +129,15 @@ h1 {
 <!-- Menú flotante -->
   <div class="menu-flotante">
     <ul>
-      <li><a href="#">Creator</a>
-      </li>
-      <li><a href="#">Font</a>
-      </li>
-      <li><a href="#">Color</a>
-      </li>
-      <li><a href="#">Other</a></li>
+      <li><a href="#inicio">Home</a>
+         </li>
+      <li><a href="#sobre-mi">Sobre mí</a>
+          </li>
+      <li><a href="#proyecto">Proyectos</a>
+          </li>
+      <li><a href="#habilidades">Mis habilidades</a>
+          </li>
+      <li><a href="#contacto">Contáctame</a></li>
     </ul>
   </div>
 
