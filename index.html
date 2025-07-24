@@ -57,6 +57,88 @@
 button:hover {
   background-color: #0056b3;
 }
+
+    /* Menú flotante (colocado en la parte inferior) */
+.menu-flotante {
+  position: fixed;
+  bottom: 0; /* Fija el menú en la parte inferior de la pantalla */
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra hacia arriba para efecto */
+}
+
+/* Estilo de la lista principal */
+.menu-flotante ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-flotante li {
+  position: relative;
+  margin-right: 30px;
+}
+
+/* Estilo de los enlaces principales */
+.menu-flotante a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+}
+
+.menu-flotante a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Submenú: oculto por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  bottom: 100%; /* Se coloca justo encima del menú */
+  left: 0;
+  background-color: #444;
+  min-width: 160px;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+/* Mostrar submenú al pasar el ratón sobre el elemento */
+.menu-flotante li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 8px 12px;
+}
+
+/* Estilo de los enlaces del submenú */
+.submenu a {
+  color: white;
+}
+
+.submenu a:hover {
+  background-color: #666;
+}
+
+/* Estilo para el contenido principal */
+.contenido {
+  padding: 50px 20px 20px 20px; /* Espacio para que el contenido no quede tapado por el menú */
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+    
   </style>
 </head>
 <body>
