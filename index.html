@@ -65,16 +65,63 @@ button:hover {
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <h1>¡Hola Mundo!</h1>
+ <header>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="index.html">Inicio</a>
-  <a href="sobre.html">Sobre mí</a>
-  <a href="contacto.html">Contacto</a>
-  <a href="formulario.html">Formulario</a>
-</nav>
+  <section id="inicio">
+    <h1>Bienvenido a mi Portfolio</h1>
+    <p>Hola, soy [Tu Nombre], un/a [profesión]. Aquí puedes conocer un poco más sobre mí y ver algunos de mis proyectos.</p>
+  </section>
 
-<p>Esta es mi página de pruebas con GTM y GA4.</p>
-<button id="btn-contacto">Haz clic aquí</button>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Aquí va un texto sobre ti: tu historia, formación, etc. ¡Hazlo atractivo y profesional!</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyecto">
+      <h3>Proyecto 1</h3>
+      <p>Descripción del proyecto 1</p>
+    </div>
+    <div class="proyecto">
+      <h3>Proyecto 2</h3>
+      <p>Descripción del proyecto 2</p>
+    </div>
+    <!-- Agrega más proyectos según sea necesario -->
+  </section>
+
+  <section id="habilidades">
+    <h2>Mis Habilidades</h2>
+    <ul>
+      <li>Habilidad 1</li>
+      <li>Habilidad 2</li>
+      <li>Habilidad 3</li>
+      <!-- Puedes usar gráficos o barras para mostrar tu nivel -->
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 </body>
 </html>
