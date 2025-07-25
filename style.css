@@ -32,8 +32,8 @@ header {
   font-family: Arial, sans-serif;
   background-color: #222;
   color: #ff004c;
-  padding: 5px 60px;
-  height: 80%;           /* más estrecho: reduce altura */
+  padding: 5px 200px;
+  height: 20%;           /* más estrecho: reduce altura */
   border-radius: 5px;
   z-index: 1000;
   display: flex;          /* centra el texto verticalmente */
