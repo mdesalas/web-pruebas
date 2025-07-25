@@ -33,7 +33,7 @@ header {
   background-color: #222;
   color: #ff004c;
   padding: 5px 200px;
-  height: 20%;           /* más estrecho: reduce altura */
+  height: 5%;           /* más estrecho: reduce altura */
   border-radius: 5px;
   z-index: 1000;
   display: flex;          /* centra el texto verticalmente */
