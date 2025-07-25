@@ -30,8 +30,8 @@
 }
 
 .mi-foto {
-  width: 400px;         /* Tamaño uniforme para ambas imágenes */
-  border-radius: 10px;  /* Bordes redondeados opcionales */
+  width: 400px;         
+  border-radius: 10px;  
   display: block;
 }
   
@@ -185,4 +185,8 @@ form textarea {
 
 form textarea {
   resize: vertical; /* Permite que se pueda agrandar verticalmente */
+}
+
+/* ==== Estilos para dispositivos móviles ==== */
+@media (max-width: 768px) {
 }
