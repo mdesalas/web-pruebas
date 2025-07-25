@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <link rel="stylesheet" href="style.css">
-  <title>Mi Web de Pruebas</title>
+  <title>Bailemos</title>
 
   <!-- Google Tag Manager -->
   <!-- Reemplaza GTM-XXXXXXX por tu ID real -->
@@ -25,8 +25,8 @@
     gtag('js', new Date());
     gtag('config', 'G-0RFV09GTTG');
   </script>
+  
   <style>
-    
     header {
       position: absolute;  /* Usamos "absolute" para colocarlo en relación con la página */
       top: 5px;            /* 5px de separación con el borde superior */
@@ -87,10 +87,38 @@ button:hover {
   background-color: #0056b3;
 }
 
+    .menu-principal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px 20px;
+  z-index: 1000;
+  background-color: transparent; /* o un color si quieres */
+}
+
+.menu-principal ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal a {
+  color: #ff004c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-principal a:hover {
+  text-decoration: underline;
+}
+
+
     /* Menú flotante (colocado en la parte inferior) */
 .menu-flotante {
   position: fixed;
-  top: 10px; /* Fija el menú en la parte superior de la pantalla */
+  bottom: 10px; /* Fija el menú en la parte inferior de la pantalla */
   left: 50%; /* Coloca el menú en el centro horizontal */
   transform: translateX(-50%); /* Ajusta el menú para que esté perfectamente centrado */
   width: 60%; /* Define el ancho del menú */
@@ -113,7 +141,7 @@ button:hover {
 
 .menu-flotante li {
   position: relative;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 /* Estilo de los enlaces principales */
@@ -148,61 +176,58 @@ h1 {
     
   </style>
 </head>
-  
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ83HFK7"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-<!-- Menú flotante -->
-  <div class="menu-flotante">
+<!-- Menú superior entre páginas -->
+<header class="menu-principal">
+  <nav>
     <ul>
-      <li><a href="#inicio">Home</a>
-         </li>
-      <li><a href="#sobre-mi">Sobre mí</a>
-          </li>
-      <li><a href="#proyecto">Proyectos</a>
-          </li>
-      <li><a href="#habilidades">Mis habilidades</a>
-          </li>
-      <li><a href="#contacto">Contáctame</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="bachata.html">Bachata</a></li>
+      <li><a href="salsa.html">Salsa</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
-  </div>
-  
+  </nav>
+</header>
+
+  <main>
   <section id="inicio">
-    <h1>Bienvenido a mi Portfolio</h1>
+    <h1>Hablemos de baile</h1>
     <p>Hola, me presento, el nombre por el que se me identifica desde hace 27 años. Actualmente me dedico al análisis de datos pero se podría decir que estoy empezando en esta aventura.
       Aquí puedes conocer un poco más sobre mí y ver algunos de mis proyectos.</p>
   </section>
 
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
+  <section id="historia">
+    <h2>Historia</h2>
      <div style="text-align: center;">
     <img src="img/nature 1.jpg" alt="Foto naturaleza" class="mi-foto">
   </div>
     <p>Aquí va un texto sobre ti: tu historia, formación, etc. ¡Hazlo atractivo y profesional!</p>
   </section>
 
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="proyecto">
-      <h3>Proyecto 1</h3>
-      <p>Descripción del proyecto 1</p>
+  <section id="referentes">
+    <h2>Referentes</h2>
+    <div class="referentes">
+      <h3>Salsa</h3>
+      <p>Referentes de la salsa</p>
     </div>
-    <div class="proyecto">
-      <h3>Proyecto 2</h3>
-      <p>Descripción del proyecto 2</p>
+    <div class="referentes">
+      <h3>Bacahata</h3>
+      <p>Referentes de la bachata</p>
     </div>
     <!-- Agrega más proyectos según sea necesario -->
   </section>
 
-  <section id="habilidades">
-    <h2>Mis Habilidades</h2>
+  <section id="eventos">
+    <h2>Eventos</h2>
     <ul>
-      <li>Habilidad 1</li>
-      <li>Habilidad 2</li>
-      <li>Habilidad 3</li>
+      <li>Evento 1</li>
+      <li>Evento 2</li>
+      <li>Evento 3</li>
       <!-- Puedes usar gráficos o barras para mostrar tu nivel -->
     </ul>
   </section>
@@ -222,5 +247,21 @@ h1 {
       <button type="submit">Enviar</button>
     </form>
   </section>
+  </main>
+  
+  <!-- Menú flotante -->
+  <div class="menu-flotante">
+    <ul>
+      <li><a href="#inicio">Inicio</a>
+         </li>
+      <li><a href="#historia">Historia</a>
+          </li>
+      <li><a href="#referentes">Referentes</a>
+          </li>
+      <li><a href="#eventos">Eventos</a>
+          </li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
 </body>
 </html>
