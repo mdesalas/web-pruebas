@@ -31,10 +31,13 @@ header {
   left: 5px;
   font-family: Arial, sans-serif;
   background-color: #222;
-  color: #FF10F0;
-  padding: 10px 20px;
+  color: #ff004c;
+  padding: 5px 60px;
+  height: 80%;           /* más estrecho: reduce altura */
   border-radius: 5px;
   z-index: 1000;
+  display: flex;          /* centra el texto verticalmente */
+
 }
 
 /* ============================= */
