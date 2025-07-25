@@ -29,6 +29,12 @@
   display: block;
 }
 
+.mi-foto {
+  width: 400px;         /* Tamaño uniforme para ambas imágenes */
+  border-radius: 10px;  /* Bordes redondeados opcionales */
+  display: block;
+}
+  
 .centrar-imagen {
   text-align: center;
 }
