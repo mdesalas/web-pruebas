@@ -127,7 +127,8 @@ nav a:hover {
 }
 
 .menu-flotante a:hover {
-  background-color: #555;
+  background-color: #ff004c;
+  color: #ff004c;
   border-radius: 4px;
 }
 
@@ -260,5 +261,15 @@ button:hover {
   .menu-principal a {
     font-size: 14px;
     padding: 8px;
+  }
+  
+  .header {
+     width: 100%;
+    padding: 10px;
+  }
+  
+.section {
+     width: 100%;
+    padding: 10px;
   }
 }
