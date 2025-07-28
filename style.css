@@ -217,6 +217,7 @@ form textarea {
 /* BOTONES                      */
 /* ============================= */
 
+
 button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -229,6 +230,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.boton-inicio {
+  background-color: #ff004c;
 
 /* ============================= */
 /* RESPONSIVE (MÓVIL)           */
