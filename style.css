@@ -220,6 +220,7 @@ form textarea {
 
 button {
   padding: 10px 20px;
+  margin: 5px;
   background-color: #ff004c;
   color: white;
   border: none;
