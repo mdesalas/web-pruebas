@@ -28,13 +28,12 @@ h1 {
 
 header {
   font-family: Arial, sans-serif;
-  background-color: #222;
+  background-color: transparent;
   color: #ff004c;
   padding: 5px 50px;
   height: 5%;           /* más estrecho: reduce altura */
-  width: 60%;
+  width: 100%;
   max-width: 100%;
-  border-radius: 5px;
   z-index: 1000;
   display: flex;          /* centra el texto verticalmente */
 
@@ -62,8 +61,8 @@ nav a:hover {
 
 .menu-principal {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 5px;
   padding: 15px 20px;
   z-index: 1000;
   background-color: transparent;
