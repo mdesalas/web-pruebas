@@ -61,8 +61,8 @@ nav a:hover {
 
 .menu-principal {
   position: fixed;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  right: 10px;
   padding: 15px 20px;
   z-index: 1000;
   background-color: transparent;
