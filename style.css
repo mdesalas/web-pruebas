@@ -95,7 +95,7 @@ nav a:hover {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60%;
+  width: 50%;
   background-color: #ff004c;
   z-index: 1000;
   padding: 10px 0;
