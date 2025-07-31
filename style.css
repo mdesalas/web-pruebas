@@ -27,19 +27,17 @@ h1 {
 /* ============================= */
 
 header {
-  font-family: Arial, sans-serif;
-  background-color: transparent;
-  color: #ff004c;
-  padding: 5px 50px;
-  height: 5%;           /* más estrecho: reduce altura */
-  width: 100%;
-  max-width: 100%;
-  z-index: 1000;
-  display: flex;          /* centra el texto verticalmente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
   position: fixed;
-  top: 0px;
-  left: 0px;
-  transition: height 0.2s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
 }
 
