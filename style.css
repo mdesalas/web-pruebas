@@ -36,6 +36,10 @@ header {
   max-width: 100%;
   z-index: 1000;
   display: flex;          /* centra el texto verticalmente */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: height 0.2s;
 
 }
 
