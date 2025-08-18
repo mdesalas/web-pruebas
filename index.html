@@ -2,10 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
   <title>Bailemos</title>
-  <link rel="icon" href="img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
 
   <!-- Google Tag Manager -->
   <!-- Reemplaza GTM-XXXXXXX por tu ID real -->
@@ -30,54 +28,45 @@
 </head>
   
 <body>
-<!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ83HFK7"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ83HFK7"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Encabezado -->
-  <header class= "header">
-  <div class="logo">
-    <img src="tu-logo.png" alt="Logo Lemonade">
-  </div>
-  
 <!-- Menú superior entre páginas -->
-<nav class="menu-principal" id="menu-superior">
+<header class="menu-principal">
+  <nav>
     <ul>
-    <li><a href="index.html" class="menu-superior-link">Inicio</a></li>
-    <li><a href="bachata.html" class="menu-superior-link">Bachata</a></li>
-    <li><a href="salsa.html" class="menu-superior-link">Salsa</a></li>
-    <li><a href="blog.html" class="menu-superior-link">Blog</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="bachata.html">Bachata</a></li>
+      <li><a href="salsa.html">Salsa</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
-  
-<!-- Contenido principal -->
-  <main class="contenido">
+</header>
 
-<!-- Secciones -->
+  <main>
   <section id="inicio">
     <h1>Hablemos de baile</h1>
     <p>Chat GPT define el baile como "una forma de expresión artística y corporal que utiliza el movimiento rítmico del cuerpo, generalmente acompañado de música, para comunicar emociones, contar historias o simplemente disfrutar del ritmo.
     Se puede realizar de manera individual, en pareja o en grupo, y varía ampliamente según la cultura, el estilo musical y el propósito (recreativo, ritual, competitivo, escénico, etc.)."</p>
-    <p>  Así mismo, Chat GPT especifica los siguientes elementos clave del baile:</p>
-    <ul>
+    <p>
+      Así mismo, Chat GPT especifica los siguientes elementos clave del baile:
       <li>Ritmo: coordinación con una base musical o percusiva.</li>
       <li>Movimiento corporal: desplazamientos, giros, pasos, gestos, etc.</li>
       <li>Expresión: transmite sentimientos, ideas o identidad cultural.</li>
       <li>Estilo: puede ser clásico (como el ballet), urbano (como hip-hop), social (como la salsa) o folclórico.</li>
-   </ul>
-  <!-- ✅ NUEVO DIV FLEX PARA LAS IMÁGENES -->
-  <div class="galeria-fotos">
-    <img src="img/woman-dancing-vintage-portrait.jpg" alt="Mujer bailando estilo vintage" class="mi-foto-baile1">
-    <img src="img/ballerina-performing.jpg" alt="Bailarina realizando una presentación de ballet" class="foto-ballet">
+    </p>
+         <div style="text-align: left;">
+    <img src="img/woman-dancing-vintage-portrait.jpg" alt="Foto baile1" class="mi-foto-baile1">
+    <img src="img/ballerina-performing.jpg" alt="Foto ballet" class="foto-ballet">
   </div>
-  <button id="boton-comenzar" class="boton-seccion" data-evento="comenzar">Comenzar</button>
   </section>
 
   <section id="historia">
     <h2>Historia</h2>
-     <div class="centrar-imagen">
-    <img src="img/nature 1.jpg" alt="Paisaje natural con árboles y montañas" class="mi-foto">
+     <div style="text-align: center;">
+    <img src="img/nature 1.jpg" alt="Foto naturaleza" class="mi-foto">
   </div>
     <p>El baile nace mucho antes de la escritura como forma de comunicación no verbal. Era ritual: religioso, espiritual, para pedir lluvia, buena caza o sanar.</p>
   <p><strong>Ejemplo:</strong> danzas tribales africanas, indígenas, chamánicas.</p>
@@ -147,14 +136,14 @@
   <section id="contacto">
     <h2>Contacto</h2>
     <form id="formulario-contacto">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" required></textarea>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" required></textarea><br><br>
 
       <button type="submit">Enviar</button>
     </form>
@@ -164,15 +153,15 @@
   <!-- Menú flotante -->
   <div class="menu-flotante">
     <ul>
-      <li><a href="#inicio" class="menu-flotante-link">Inicio</a>
+      <li><a href="#inicio">Inicio</a>
          </li>
-      <li><a href="#historia"class="menu-flotante-link">Historia</a>
+      <li><a href="#historia">Historia</a>
           </li>
-      <li><a href="#referentes" class="menu-flotante-link">Referentes</a>
+      <li><a href="#referentes">Referentes</a>
           </li>
-      <li><a href="#eventos" class="menu-flotante-link">Eventos</a>
+      <li><a href="#eventos">Eventos</a>
           </li>
-      <li><a href="#contacto" class="menu-flotante-link">Contacto</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </div>
 </body>
